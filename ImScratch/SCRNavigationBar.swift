@@ -22,7 +22,6 @@ class SCRNavigationBar: UINavigationBar {
     override func drawRect(rect: CGRect)
     {
         // Drawing code
-        //shadowImage = UIImage
         translucent = true
         backgroundColor = UIColor.clearColor()
         shadowImage = UIImage()

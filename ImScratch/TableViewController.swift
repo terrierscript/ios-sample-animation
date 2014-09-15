@@ -12,6 +12,7 @@ class CustomViewCell : UITableViewCell{
 }
 class TableViewController: UITableViewController {
 
+    @IBOutlet var coverImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +21,20 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        coverImage.autoresizingMask = UIViewAutoresizing.FlexibleHeight
+        
+        setBounceAnimation(coverImage)
+    }
+    
+    func setBounceAnimation(view : UIView){
+        let animation = POPSpringAnimation()
+        
+        animation.property = POPAnimatableProperty.propertyWithName(kPOPLayerSize) as POPAnimatableProperty
+        animation.fromValue = NSValue(CGSize: CGSizeMake(100, 100))
+        //animation.toValue =
+        animation.springBounciness = 24.0
+        animation.springSpeed = 6
+        view.pop_addAnimation(animation, forKey: "bound")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,40 +44,42 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 5
     }
 
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         return 3
     }
-
-    
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        //scrollView.contentOffset.y
+//        scrollView.center
+    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
+        
         // Configure the cell...
-
+        
         return cell
     }
+
     
-    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
-        return "今日のスクラッチ"
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        //let v = tableView.dequeueReusableCellWithIdentifier("MenuHeader") as UIView
+        return 100 // v.bounds.height
     }
     
-    
-    
-    override func tableView(tableView: UITableView!, heightForHeaderInSection section: Int) -> CGFloat {
-        let v = tableView.dequeueReusableCellWithIdentifier("HeaderCell") as UIView
-        println(v.bounds)
-        return v.bounds.height
-    }
-    override func tableView(tableView: UITableView!, viewForHeaderInSection section: Int) -> UIView! {
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView {
+     /*
+        if(section == 0){
+            //return tableView.dequeueReusableCellWithIdentifier("MenuHeader") as UIView
+        }else{*/
         return tableView.dequeueReusableCellWithIdentifier("HeaderCell") as UIView
+        
     }
     /*
     override func tableView(tableView: UITableView!, willDisplayHeaderView view: UIView!, forSection section: Int) {

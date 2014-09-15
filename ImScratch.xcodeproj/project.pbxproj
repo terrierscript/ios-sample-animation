@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C6ADC5E4E664ABEB857CF9B /* libPods-ImScratchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C64613FCC29474EB8DD5AA5 /* libPods-ImScratchTests.a */; };
+		C46D0BDE8FE04EBE91378909 /* libPods-ImScratch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7095BC113750410791E2946A /* libPods-ImScratch.a */; };
+		D522428119BFA82600A7FF26 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D522428019BFA82600A7FF26 /* Launch Screen.xib */; };
 		D548DF0619BB5EFC00BFBF9B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D548DF0519BB5EFC00BFBF9B /* TableViewController.swift */; };
+		D54F9B2A19C67E37007B69DE /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F9B2919C67E37007B69DE /* Foo.m */; };
 		D5D4B02C19B9DFC700DEAF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4B02B19B9DFC700DEAF78 /* AppDelegate.swift */; };
 		D5D4B02E19B9DFC700DEAF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4B02D19B9DFC700DEAF78 /* ViewController.swift */; };
 		D5D4B03119B9DFC700DEAF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D4B02F19B9DFC700DEAF78 /* Main.storyboard */; };
@@ -27,7 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C64613FCC29474EB8DD5AA5 /* libPods-ImScratchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImScratchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6222E355EA409495087F64 /* Pods-ImScratch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImScratch.xcconfig"; path = "Pods/Pods-ImScratch.xcconfig"; sourceTree = "<group>"; };
+		38EDC5A7D01642D29CB1AF77 /* Pods-ImScratchTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImScratchTests.xcconfig"; path = "Pods/Pods-ImScratchTests.xcconfig"; sourceTree = "<group>"; };
+		7095BC113750410791E2946A /* libPods-ImScratch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImScratch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D522428019BFA82600A7FF26 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		D548DF0519BB5EFC00BFBF9B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D54F9B2719C67E36007B69DE /* ImScratch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImScratch-Bridging-Header.h"; sourceTree = "<group>"; };
+		D54F9B2819C67E37007B69DE /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		D54F9B2919C67E37007B69DE /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		D5D4B02619B9DFC700DEAF78 /* ImScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4B02A19B9DFC700DEAF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D4B02B19B9DFC700DEAF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46D0BDE8FE04EBE91378909 /* libPods-ImScratch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6ADC5E4E664ABEB857CF9B /* libPods-ImScratchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +75,13 @@
 		D5D4B01D19B9DFC700DEAF78 = {
 			isa = PBXGroup;
 			children = (
+				D522428019BFA82600A7FF26 /* Launch Screen.xib */,
 				D5D4B02819B9DFC700DEAF78 /* ImScratch */,
 				D5D4B03B19B9DFC800DEAF78 /* ImScratchTests */,
 				D5D4B02719B9DFC700DEAF78 /* Products */,
+				1F6222E355EA409495087F64 /* Pods-ImScratch.xcconfig */,
+				E86E1437EAA84330A9E9AF97 /* Frameworks */,
+				38EDC5A7D01642D29CB1AF77 /* Pods-ImScratchTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +104,9 @@
 				D5D4B04819B9E45400DEAF78 /* SCRNavigationBar.swift */,
 				D5D4B03219B9DFC700DEAF78 /* Images.xcassets */,
 				D5D4B02919B9DFC700DEAF78 /* Supporting Files */,
+				D54F9B2819C67E37007B69DE /* Foo.h */,
+				D54F9B2919C67E37007B69DE /* Foo.m */,
+				D54F9B2719C67E36007B69DE /* ImScratch-Bridging-Header.h */,
 			);
 			path = ImScratch;
 			sourceTree = "<group>";
@@ -115,6 +136,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E86E1437EAA84330A9E9AF97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7095BC113750410791E2946A /* libPods-ImScratch.a */,
+				0C64613FCC29474EB8DD5AA5 /* libPods-ImScratchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D4B04219B9DFC800DEAF78 /* Build configuration list for PBXNativeTarget "ImScratch" */;
 			buildPhases = (
+				ED357BDA8C104E32A3E26122 /* Check Pods Manifest.lock */,
 				D5D4B02219B9DFC700DEAF78 /* Sources */,
 				D5D4B02319B9DFC700DEAF78 /* Frameworks */,
 				D5D4B02419B9DFC700DEAF78 /* Resources */,
+				655FDF6F1F8A455F86EFBFDA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D4B04519B9DFC800DEAF78 /* Build configuration list for PBXNativeTarget "ImScratchTests" */;
 			buildPhases = (
+				EBED44D1190846BCB7B0E446 /* Check Pods Manifest.lock */,
 				D5D4B03419B9DFC800DEAF78 /* Sources */,
 				D5D4B03519B9DFC800DEAF78 /* Frameworks */,
 				D5D4B03619B9DFC800DEAF78 /* Resources */,
+				0FC5056D3DCA48CBB6316452 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +231,7 @@
 			files = (
 				D5D4B03119B9DFC700DEAF78 /* Main.storyboard in Resources */,
 				D5D4B03319B9DFC700DEAF78 /* Images.xcassets in Resources */,
+				D522428119BFA82600A7FF26 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +244,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FC5056D3DCA48CBB6316452 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ImScratchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		655FDF6F1F8A455F86EFBFDA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ImScratch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBED44D1190846BCB7B0E446 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED357BDA8C104E32A3E26122 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5D4B02219B9DFC700DEAF78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,6 +316,7 @@
 				D5D4B02E19B9DFC700DEAF78 /* ViewController.swift in Sources */,
 				D5D4B02C19B9DFC700DEAF78 /* AppDelegate.swift in Sources */,
 				D548DF0619BB5EFC00BFBF9B /* TableViewController.swift in Sources */,
+				D54F9B2A19C67E37007B69DE /* Foo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,28 +429,38 @@
 		};
 		D5D4B04319B9DFC800DEAF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6222E355EA409495087F64 /* Pods-ImScratch.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImScratch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImScratch/ImScratch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D5D4B04419B9DFC800DEAF78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6222E355EA409495087F64 /* Pods-ImScratch.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ImScratch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImScratch/ImScratch-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		D5D4B04619B9DFC800DEAF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EDC5A7D01642D29CB1AF77 /* Pods-ImScratchTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -371,6 +480,7 @@
 		};
 		D5D4B04719B9DFC800DEAF78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EDC5A7D01642D29CB1AF77 /* Pods-ImScratchTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
